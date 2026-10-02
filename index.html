@@ -1,0 +1,32 @@
+<a href="https://github.com" class="btn btn-green" style="margin-bottom: 12px; display:block;">💻 Скачать для Windows (7 / 10 / 11)</a>
+                
+                <!-- Прямая загрузка реального работающего .apk файла для Android -->
+                <a href="https://github.com" class="btn btn-blue" style="display:block;">🤖 Скачать для Android (APK-клиент)</a>
+            </div>
+        </div>
+
+        <!-- 2. ВКЛАДКА: ИГРЫ -->
+        <div id="tab-games" class="page">
+            <div id="games-menu">
+                <div class="card">
+                    <h2 style="text-align: center; margin-bottom: 15px;">Выберите игровой режим:</h2>
+                    <button class="btn btn-blue" onclick="openGameMode('game-reflex')">⚡ Проверка рефлексов</button>
+                    <button class="btn btn-gold" onclick="startMathMode()">🧮 Математический тренажер</button>
+                    <button class="btn btn-green" onclick="openGameMode('game-farm')">💎 Крипто-Ферма (Пассивный доход)</button>
+                </div>
+            </div>
+
+            <!-- ИГРА 1: РЕФЛЕКСЫ -->
+            <div id="game-reflex" class="page">
+                <div class="card">
+                    <h2>Режим: Рефлексы</h2>
+                    <p>Дождись зеленого цвета поля и кликай как можно быстрее!</p>
+                    <div id="refl-block" class="game-zone" onclick="handleReflexClick()">КЛИКНИ ДЛЯ СТАРТА</div>
+                    <div id="refl-status" style="font-weight: 700; text-align: center; height: 25px;"></div>
+                    <button class="btn btn-gray" style="margin-top:15px;" onclick="backToGamesMenu()">Назад к играм</button>
+                </div>
+            </div>
+
+            <!-- ИГРА 2: МАТЕМАТИКА -->
+            <div id="game-math" class="page">
+                <div class="card">
